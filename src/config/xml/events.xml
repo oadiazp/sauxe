@@ -1,0 +1,9 @@
+<events>
+       <onAddSub>
+	       <observers>
+		       <observer reference = 'traza' controller = 'GestionartrazaController' action = 'addCategoryAction'>
+			       <param name = 'name'/>
+		       </observer>
+	       </observers>
+       </onAddSub>
+</events>

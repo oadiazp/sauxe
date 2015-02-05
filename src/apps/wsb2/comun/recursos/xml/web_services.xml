@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices>
+<package name="SSA" uri="/ws/SSA.php"><service name="BuscarUsuarioByAlias" subsystem="portal" class="" method="" state="no probado"/><service name="AutenticarUsuario" subsystem="seguridad" class="SeguridadProxyService" method="authenticateUser" src="seguridad"><param name="user" type="string"/><param name="password" type="string"/><return type="string"/></service></package></webservices>

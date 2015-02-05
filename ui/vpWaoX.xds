@@ -1,0 +1,222 @@
+{
+    "name": "vpWaoX.xds",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": ".",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "lineEnding": "LF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "1.2.2",
+    "components": [
+        {
+            "id": "ExtBox1-ext-gen3496",
+            "type": "viewport",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "designer|userClassName": "WaoX.vpWaox",
+                "designer|userAlias": "waox.vpWaox"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen8426",
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeItem": 0,
+                        "layout": "card",
+                        "title": "",
+                        "designer|userClassName": "MyPanel6",
+                        "layout|region": "center"
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen2219",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "",
+                                "designer|userClassName": "WaoX.pBase",
+                                "designer|userAlias": "waox.pBase"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4477"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen4249",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.pBase",
+                                "designer|userAlias": "waox.pBase"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4477"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen5250",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.pBase",
+                                "designer|userAlias": "waox.pBase"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4477"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen6258",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.pBase",
+                                "designer|userAlias": "waox.pBase"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4477"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen7272",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.pBase",
+                                "designer|userAlias": "waox.pBase"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4477"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen5220",
+            "type": "menuitem",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "New",
+                "designer|userClassName": "WaoX.btnNew",
+                "designer|userAlias": "waox.btnNew"
+            }
+        },
+        {
+            "id": "ExtBox1-ext-gen4477",
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "border",
+                "frame": true,
+                "title": "WaoX v0.1",
+                "designer|userClassName": "WaoX.pBase",
+                "designer|userAlias": "waox.pBase"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen4925",
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "tbar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyToolbar",
+                        "dock": "tbar"
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen5054",
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Dashboard",
+                                "designer|userClassName": "MyButton"
+                            },
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen5217",
+                                    "type": "menu",
+                                    "reference": {
+                                        "name": "menu",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyMenu"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "ExtBox1-ext-gen5472",
+                                            "type": "linkedinstance",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "WaoX.btnNew",
+                                                "designer|userAlias": "waox.btnNew"
+                                            },
+                                            "iconCls": "icon-linkedinstance",
+                                            "masterInstanceId": "ExtBox1-ext-gen5220"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": [],
+    "framework": "ext33"
+}

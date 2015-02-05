@@ -1,0 +1,37 @@
+{
+    "name": "winConfiguration.xds",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": ".",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "1.2.2",
+    "components": [
+        {
+            "id": "ExtBox1-ext-gen6856",
+            "type": "window",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 250,
+                "width": 400,
+                "title": "Configuration",
+                "designer|userClassName": "WaoX.winConfiguration",
+                "designer|userAlias": "waox.winConfiguration"
+            }
+        }
+    ],
+    "stores": [],
+    "framework": "ext33"
+}

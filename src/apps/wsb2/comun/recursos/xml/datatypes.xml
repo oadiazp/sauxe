@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root> 
+	<int primary='true'/>
+	<string primary='true'/>
+	<float primary='true'/>
+	<char primary='true'/>
+	<void primary='true'/>
+	<bool primary='true'/>
+	<Persona>
+		<nombre datatype="string"/>
+		<apellidos datatype="string"/>
+		<edad datatype="int"/>
+	</Persona>
+</root>

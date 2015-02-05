@@ -1,0 +1,382 @@
+{
+    "name": "winNew.xds",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "exportPath": ".",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "lineEnding": "LF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true,
+        "appName": "MyApp"
+    },
+    "xdsVersion": "1.2.2",
+    "components": [
+        {
+            "id": "ExtBox1-ext-gen1661",
+            "type": "window",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 304,
+                "width": 349,
+                "layout": "border",
+                "title": "New",
+                "modal": true,
+                "designer|userClassName": "WaoX.winNew",
+                "designer|userAlias": "waox.winNew"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen5325",
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "west",
+                        "designer|userClassName": "WaoX.egChart",
+                        "designer|userAlias": "waox.egChart"
+                    },
+                    "iconCls": "icon-linkedinstance",
+                    "masterInstanceId": "ExtBox1-ext-gen1838"
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen5184",
+            "type": "combobox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "value": "className",
+                "displayField": "name",
+                "mode": "local",
+                "store": "waox.stCBChart",
+                "triggerAction": "all",
+                "designer|userClassName": "WaoX.cbChart",
+                "designer|userAlias": "waox.cbChart"
+            }
+        },
+        {
+            "id": "ExtBox1-ext-gen5292",
+            "type": "combobox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "displayField": "name",
+                "mode": "local",
+                "store": "waox.stView",
+                "triggerAction": "all",
+                "valueField": "className",
+                "designer|userClassName": "WaoX.cbView",
+                "designer|userAlias": "waox.cbView"
+            }
+        },
+        {
+            "id": "ExtBox1-ext-gen3929",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Add",
+                "designer|userClassName": "WaoX.btnAdd",
+                "designer|userAlias": "waox.btnAdd"
+            }
+        },
+        {
+            "id": "ExtBox1-ext-gen4061",
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "Remove",
+                "designer|userClassName": "WaoX.btnRemove",
+                "designer|userAlias": "waox.btnRemove"
+            }
+        },
+        {
+            "id": "ExtBox1-ext-gen1838",
+            "type": "editorgrid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "",
+                "autoExpandColumn": "chart",
+                "store": "waox.stChart",
+                "designer|userClassName": "WaoX.egChart",
+                "designer|userAlias": "waox.egChart"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen1845",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "header": "Chart",
+                        "id": "chart",
+                        "sortable": true,
+                        "width": 100,
+                        "designer|userClassName": "MyColumn"
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen8641",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.cbChart",
+                                "designer|userAlias": "waox.cbChart"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen5184"
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen1859",
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "",
+                        "dataIndex": "number",
+                        "header": "View",
+                        "sortable": true,
+                        "width": 100,
+                        "designer|userClassName": "MyNumberColumn"
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen10077",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "editor",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.cbView",
+                                "designer|userAlias": "waox.cbView"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen5292"
+                        }
+                    ]
+                },
+                {
+                    "id": "ExtBox1-ext-gen3173",
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "tbar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyToolbar",
+                        "dock": "tbar"
+                    },
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen4240",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.btnAdd",
+                                "designer|userAlias": "waox.btnAdd"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen3929"
+                        },
+                        {
+                            "id": "ExtBox1-ext-gen5064",
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "WaoX.btnRemove",
+                                "designer|userAlias": "waox.btnRemove"
+                            },
+                            "iconCls": "icon-linkedinstance",
+                            "masterInstanceId": "ExtBox1-ext-gen4061"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "ExtBox1-ext-gen6091",
+            "type": "jsonstore",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "storeId": "waox.stChart",
+                "root": "data",
+                "designer|userClassName": "WaoX.stChart",
+                "designer|userAlias": "waox.stChart"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen6183",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "chart",
+                        "designer|userClassName": "MyField"
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen6192",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "view",
+                        "designer|userClassName": "MyField1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen7260",
+            "type": "jsonstore",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "storeId": "waox.stCBChart",
+                "root": "data",
+                "designer|userClassName": "WaoX.stCBChart",
+                "designer|userAlias": "waox.stCBChart"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen7263",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "className",
+                        "designer|userClassName": "MyField"
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen7266",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "name",
+                        "designer|userClassName": "MyField1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen8236",
+            "type": "jsonstore",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "storeId": "waox.stView",
+                "root": "data",
+                "designer|userClassName": "WaoX.stView",
+                "designer|userAlias": "waoX.stView"
+            },
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen8239",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "className",
+                        "designer|userClassName": "MyField"
+                    }
+                },
+                {
+                    "id": "ExtBox1-ext-gen8242",
+                    "type": "datafield",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "name",
+                        "designer|userClassName": "MyField1"
+                    }
+                }
+            ]
+        }
+    ],
+    "framework": "ext33"
+}

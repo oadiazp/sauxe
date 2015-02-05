@@ -1,0 +1,18 @@
+include 'config_service.php';
+[#Includes#]
+
+[#Class#]
+
+if (isset($_GET['wsdl'])) {
+    $autodiscover = new Zend_Soap_AutoDiscover(new Zend_Soap_Wsdl_Strategy_ArrayOfTypeSequence ());
+    ini_set("soap.wsdl_cache_enabled", 0);
+    $autodiscover->setClass('[#ClassName#]');
+    $autodiscover->handle();
+} else {
+    $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http');
+    $config['base_url'] .= '://' . $_SERVER['HTTP_HOST'];
+    $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),'' , $_SERVER['SCRIPT_NAME']);
+    $server = new Zend_Soap_Server($config ['base_url'] . '[#ClassName#].php?wsdl');
+    $server->setClass('[#ClassName#]');
+    $server->handle();
+}

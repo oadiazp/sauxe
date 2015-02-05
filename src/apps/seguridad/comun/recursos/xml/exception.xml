@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excepciones>
+	<CONT001>
+		<tipo>B</tipo>
+		<es>
+			<mensaje>Error al insertar.</mensaje>
+			<descripcion>Ocurrio un error en el servidor mientras se trataba de insertar. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT001>
+	
+	<CONT002>
+		<tipo>B</tipo>
+		<es>
+			<mensaje>Error al eliminar.</mensaje>
+			<descripcion>Ocurrio un error en el servidor mientras se trataba de eliminar. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT002>
+	
+	<CONT004>
+		<tipo>B</tipo>
+		<es>
+			<mensaje>Error al modificar.</mensaje>
+			<descripcion>Ocurrio un error en el servidor mientras se trataba de modificar. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT004>
+    
+    <CONT007>
+        <tipo>LP</tipo>
+        <es>
+            <mensaje>Error al insertar.</mensaje>
+            <descripcion>Ocurrio un error en el servidor mientras se trataba de insertar. Ponganse en contacto con el administrador del sistema.</descripcion>            
+        </es>
+    </CONT007>
+    
+    <CONT008>
+        <tipo>LP</tipo>
+        <es>
+            <mensaje>Error al eliminar.</mensaje>
+            <descripcion>Ocurrio un error en el servidor mientras se trataba de eliminar. Ponganse en contacto con el administrador del sistema.</descripcion>            
+        </es>
+    </CONT008>
+    
+    <CONT009>
+        <tipo>LP</tipo>
+        <es>
+            <mensaje>Error al modificar.</mensaje>
+            <descripcion>Ocurrio un error en el servidor mientras se trataba de modificar. Ponganse en contacto con el administrador del sistema.</descripcion>            
+        </es>
+    </CONT009>
+	<CONT005>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error de Consulta</mensaje>
+			<descripcion>Ocurrio un error en el servidor mientras se cargaban los contenidos economicos. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT005>
+	<CONT006>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error de Consulta</mensaje>
+			<descripcion>Ocurrio un error en el servidor al cargar los datos. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT006>
+		<CONT010>
+		<tipo>B</tipo>
+		<es>
+			<mensaje>Error de Consulta</mensaje>
+			<descripcion>Ocurrio un error en el servidor al cargar los datos. Ponganse en contacto con el administrador del sistema.</descripcion>			
+		</es>
+	</CONT010>
+	<CONT0011>
+        <tipo>LP</tipo>
+        <es>
+            <mensaje>La contrase anterior no es correcta.</mensaje>
+            <descripcion>Ocurrio un error en el servidor mientras se trataba de cambiar la contrasea. Ponganse en contacto con el administrador del sistema.</descripcion>            
+        </es>
+    </CONT0011>
+</excepciones>

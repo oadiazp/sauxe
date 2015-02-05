@@ -1,0 +1,128 @@
+{
+    "projectId": "B9B99E64-8975-4636-948E-DD8E187D3FE1",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyWindow",
+            "cid": "window",
+            "jsClass": "MyWindow",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Excepciones",
+                "width": 635,
+                "height": 377,
+                "closable": false,
+                "modal": true
+            },
+            "cn": [
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "",
+                        "width": 622,
+                        "height": 348,
+                        "padding": 10,
+                        "frame": true
+                    },
+                    "cn": [
+                        {
+                            "id": "MyTextField",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Denominación",
+                                "anchor": "100%",
+                                "id": "denominacion"
+                            }
+                        },
+                        {
+                            "id": "MyTextField1",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Estructura",
+                                "anchor": "100%",
+                                "id": "estructura"
+                            }
+                        },
+                        {
+                            "id": "MyCombo",
+                            "cid": "combobox",
+                            "jsClass": "MyCombo",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Categor&iacute;a",
+                                "anchor": "100%",
+                                "id": "categoria"
+                            }
+                        },
+                        {
+                            "id": "MyTextField2",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "C&oacute;digo",
+                                "anchor": "100%",
+                                "id": "codigo"
+                            }
+                        },
+                        {
+                            "id": "MyTextField3",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField3",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Mensaje",
+                                "anchor": "100%",
+                                "id": "mensaje"
+                            }
+                        },
+                        {
+                            "id": "MyFieldSet",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Respuesta",
+                                "height": 188
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyHtmlEditor",
+                                    "cid": "htmleditor",
+                                    "jsClass": "MyHtmlEditor",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "anchor": "100%",
+                                        "height": 150,
+                                        "fieldLabel": "Label",
+                                        "hideLabel": true,
+                                        "id": "respuesta"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": []
+}

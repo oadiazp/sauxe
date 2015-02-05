@@ -1,0 +1,5 @@
+/*** Fichero con la configuración del estilo del portal ***/
+.bannerPortal{width:100%;height:40px;background-image:url("../../images/portal/bCtr.png");background-repeat:repeat;}
+.bIzq{float:left;background-image:url("../../images/portal/bIzq.png");width:290px;height:40px;}
+.bDer{float:right;background-image:url("../../images/portal/bDer.png");height:40px;width:230px;}
+#barraMenu{margin-top:40px;}

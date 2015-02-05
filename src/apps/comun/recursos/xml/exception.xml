@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Excepciones>
+	<!-- Excepciónes del Framework -->
+		<!--Excepción de GlobalConcepts-->
+			<EST001>
+				<tipo>LP</tipo>       
+				<es>
+					<mensaje>Debe configurar la entidad a la que pertenece</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>
+				</es>
+			</EST001>
+		<!-- Excepciónes Generales -->
+			<NODEFINED>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Excepción disparada por el sistema y no definida en la configuración de Excepciónes del sistema. Por favor pónganse en contacto con el equipo de desarrollo.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>
+				</es>
+            </NODEFINED>
+			<NOCONTROLLED>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Excepción no controlada por el sistema. Por favor pónganse en contacto con el equipo de desarrollo.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>
+				</es>
+			</NOCONTROLLED>
+			<SESS001>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Excepción de configuración de la sesión. Por favor debe desactivar el session.auto_start en el fichero php.ini</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</SESS001>
+		<!-- Excepciónes del portal -->
+			<EPDDL01>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Excepción del servicio de desbloqueo de logistica. Desactivar la validacion de portal->PortalController->closeportalAction->PortalValidator->desbloquearDocLog o arreglar el problema con el equipo de logistica.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EPDDL01>
+		<!-- Excepciónes de nomencladores-->
+		<NOM001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>El nomenclador con que está tratado de interactuar no existe</mensaje>
+				<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+			</es>
+		</NOM001>
+		<NOM002>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al eliminar el elementodsfsf</mensaje>
+				<descripcion>Error al eliminar el elemento, aun está referenciado</descripcion>		
+			</es>
+		</NOM002>		
+		<NOM010>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error en una transacción del nomenclador. En el Query</mensaje>
+				<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+			</es>
+		</NOM010>
+		
+		<NOM011>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error en una transacción del nomenclador. En el HoleQuery</mensaje>
+				<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+			</es>
+		</NOM011>
+		
+		<NOM003>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>El nomenclador que está tratando de crear ya existe</mensaje>
+				<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>	
+			</es>
+		</NOM003>
+		
+		<!-- Excepciónes de validación -->
+			<EV001>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. La aplicacion no se está validando.</mensaje>
+					<descripcion>Los datos enviados no se están validando. Por problemas de integridad de los datos no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV001>
+			<EV002>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. El controlador solicitado no se está validando.</mensaje>
+					<descripcion>Los datos enviados no se están validando. Por problemas de integridad de los datos no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV002>
+			<EV003>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. La acción solicitada no se está validando.</mensaje>
+					<descripcion>Los datos enviados no se están validando. Por problemas de integridad de los datos no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV003>
+			<EV004>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de seguridad. Se están enviando los datos por GET y estos deben ser enviados por POST</mensaje>
+					<descripcion>Se están enviando los datos de forma insegura. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV004>
+			<EV005>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. Uno de los campos es null y está definido como obligatorio en el xml de validación.</mensaje>
+					<descripcion>Al menos uno de los datos enviados es obligatorio. Por favor revise los datos e intente ejecutar la acción nuevamente.</descripcion>		
+				</es>
+			</EV005>
+			<EV006>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. Uno de los campos no es del tipo especificado en el xml de validación.</mensaje>
+					<descripcion>Al menos uno de los datos enviados no es válido. Por favor revise los datos e intente ejecutar la acción nuevamente.</descripcion>		
+				</es>
+			</EV006>
+			<EV007>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. No se encontró una expresión regular para validar uno de los tipos especificados.</mensaje>
+					<descripcion>Al menos uno de los datos enviados no se pudo validar. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV007>
+			<EV008>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. No se declaró una de las clases que valida una de las precondiciones.</mensaje>
+					<descripcion>Al menos una de las precondiciones de la acción no se pudo validar. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV008>
+			<EV009>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. No se encontró una de las clases que valida una de las precondiciones.</mensaje>
+					<descripcion>Al menos una de las precondiciones de la acción no se pudo validar. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV009>
+			<EV010>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. No se declaró el método o inyector de la clase que valida una de las precondiciones.</mensaje>
+					<descripcion>Al menos una de las precondiciones de la acción no se pudo validar. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV010>
+			<EV011>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. El método o inyector de las clase que valida una de las precondiciones no existe.</mensaje>
+					<descripcion>Al menos una de las precondiciones de la acción no se pudo validar. Por problemas de seguridad no se puede ejecutar la acción solicitada. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</EV011>
+			<EV012>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de validación. La acción solicitada no cumple con las precondiciones</mensaje>
+					<descripcion>Una de las precondiciones de la acción no es válida. Por favor revise los datos o verifique que las precondiciones para ejecutar la acción están dadas.</descripcion>		
+				</es>
+			</EV012>
+		<!-- Excepciónes de Integracion (IoC) -->
+			<IOC001>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de integración. El contrato del servicio solicitado no está definido.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</IOC001>
+			<IOC002>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de integración. Uno de los parámetros definidos en el contrato del servicio no es válido.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</IOC002>
+			<IOC003>
+				<tipo>LP</tipo>
+				<es>ZendExt_Exception
+					<mensaje>Error de integración. La clase que implementa el servicio no existe.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</IOC003>
+			<IOC004>
+				<tipo>LP</tipo>
+				<es>
+				<mensaje>Error de integración. El método de la clase que implementa el servicio no existe.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</IOC004>
+			<IOC005>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de integración. El servicio solicitado está devolviendo un resultado que no es válido.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</IOC005>
+		<!-- Excepciónes del Tejedor (Weaver (AOP)) -->
+			<WEAVER02>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. La acción solicitada no tiene definida una plantilla de aspecto.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER02>
+			<WEAVER01>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. La plantilla de aspecto especificada para la acción solicitada no está definida.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER01>
+			<WEAVER03>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. Uno de los aspectos de la plantilla asignada a la acción no está definido.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER03>
+			<WEAVER04>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. La clase es un singlenton y debe implementar un método 'getInstance' que devuelve la instancia de la clase</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER04>
+			<WEAVER05>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. El método inyector de uno de los aspectos no existe.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER05>
+			<WEAVER06>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. La clase que implementa el aspecto no existe.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER06>
+			<WEAVER07>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error del Tejedor de Aspectos. Está llamando a un método que no existe.</mensaje>
+					<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>		
+				</es>
+			</WEAVER07>
+		<!-- Excepciónes de configuración Interna de los módulos -->
+			<E010>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al cargar el idioma. El fichero de idioma de la vista no existe.</mensaje>
+					<descripcion>No se pudo obtener la configuración del idioma. Intente acceder nuevamente al sistema o a la funcionalidad solicitada. Si el problema persiste contacte al administrador.</descripcion>		
+				</es>
+			</E010>
+			<E011>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al cargar el idioma. No se puede acceder al fichero de idioma de la vista. Acceso denegado</mensaje>
+					<descripcion>No se pudo obtener la configuración del idioma. Intente acceder nuevamente al sistema o a la funcionalidad solicitada. Si el problema persiste contacte al administrador.</descripcion>		
+				</es>
+			</E011>
+			<E014>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error en la conexión a la Base de Datos. Configure correctamente la conexión en el fichero de configuración del sistema.</mensaje>
+					<descripcion>En estos momentos el servidor de base de datos no está disponible. Intente utlizar el sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>		
+				</es>
+			</E014>
+		<!-- Excepciónes de Seguridad -->
+		<S001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Configure correctamente la seguridad del sistema.</mensaje>
+				<descripcion>En estos momentos los servicios de seguridad no están disponibles. Por favor intente acceder al sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>			
+			</es>
+		</S001>
+		<S002>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Verifique que el servicio de autenticación esté disponible.</mensaje>
+				<descripcion>En estos momentos el servicio de autenticación no está disponible. Por favor intente acceder al sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>			
+			</es>
+		</S002>
+		<S003>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Verifique que el servicio de configuración de perfiles esté disponible.</mensaje>
+				<descripcion>En estos momentos el servicio para obtener la configuración del perfil del usuario no está disponible. Por favor intente acceder al sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>			
+			</es>
+		</S003>
+		<S004>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Verifique que el servicio de carga de funcionalidades esté disponible.</mensaje>
+				<descripcion>En estos momentos el servicio para obtener las funcionalidades del sistema no está disponible. Por favor intente acceder al sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>			
+			</es>
+		</S004>
+		<SEG001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha realizado la configuración de claves para los usuarios.</mensaje>
+				<descripcion>Realice la configuración de claves antes de insertar un usuario.</descripcion>            
+			</es>
+		</SEG001>
+		<SEG002>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener números.</mensaje>
+				<descripcion>La clave debe contener números.</descripcion>            
+			</es>
+		</SEG002>
+		<SEG003>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener letras.</mensaje>
+				<descripcion>La clave debe contener letras.</descripcion>            
+			</es>
+		</SEG003>
+		<SEG004>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener signos.</mensaje>
+				<descripcion>La clave debe contener signos.</descripcion>            
+			</es>
+		</SEG004>
+		<SEG005>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener números y letras.</mensaje>
+				<descripcion>La clave debe contener números y  letras.</descripcion>            
+			</es>
+		</SEG005>
+		<SEG006>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener letras y signos.</mensaje>
+				<descripcion>La clave debe contener letras y signos.</descripcion>            
+			</es>
+		</SEG006>
+		<SEG007>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener números y signos.</mensaje>
+				<descripcion>La la clave debe contener números y signos.</descripcion>            
+			</es>
+		</SEG007>
+		<SEG008>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. No ha cumplido con el requerimiento de la clave de tener letras, números y signos.</mensaje>
+				<descripcion>La la clave debe contener letras, números y signos.</descripcion>            
+			</es>
+		</SEG008>.
+		<SEG009>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un usuario que ya existe.</mensaje>
+				<descripcion>Ya existe un usuario con la misma denominación.</descripcion>            
+			</es>
+		</SEG009>
+		<SEG010>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Se ha intentado modificar un servidor que es utilizado por sistemas.</mensaje>
+				<descripcion>No se puede modificar, está siendo utilizado por algún sistema.</descripcion>            
+			</es>
+		</SEG010>
+		<SEG011>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Se ha intentado eliminar un servidor que está siendo utilizado por algún usuario.</mensaje>
+				<descripcion>Los servidores están siendo usados.</descripcion>            
+			</es>
+		</SEG011>
+		<SEG012>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Se ha intentado insertar un rol sin funcionalidades.</mensaje>
+				<descripcion>Debe seleccionar al menos una funcionalidad.</descripcion>            
+			</es>
+		</SEG012>
+		<SEG013>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. La contraseña anterior es incorrecta.</mensaje>
+				<descripcion>La contraseña anterior es incorrecta.</descripcion>            
+			</es>
+		</SEG013>
+		<SEG014>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un idioma que ya existe.</mensaje>
+				<descripcion>Ya existe un idioma con la misma denominación.</descripcion>           
+			</es>
+		</SEG014>
+		<SEG015>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un idioma que ya existe.</mensaje>
+				<descripcion>Ya existe un idioma con la misma abreviatura.</descripcion>           
+			</es>
+		</SEG015>
+		<SEG016>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un tema que ya existe.</mensaje>
+				<descripcion>Ya existe un tema con la misma denominación.</descripcion>            
+			</es>
+		</SEG016>
+		<SEG017>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un tema que ya existe.</mensaje>
+				<descripcion>Ya existe un tema con la misma abreviatura.</descripcion>            
+			</es>
+		</SEG017>
+		<SEG018>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un rol que ya existe.</mensaje>
+				<descripcion>Ya existe un rol con la misma denominación.</descripcion>            
+			</es>
+		</SEG018>
+		<SEG019>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de seguridad. Ha intentado crear un rol que ya existe.</mensaje>
+				<descripcion>Ya existe un rol con la misma abreviatura.</descripcion>            
+			</es>
+		</SEG019>
+        <SEG020>
+            <tipo>LP</tipo>
+            <es>
+                <mensaje>Error de seguridad. La nueva contrasena no cumple con los requerimientos especificados.</mensaje>
+                <descripcion>La nueva contraseña no cumple con los requerimientos especificados.</descripcion>            
+            </es>
+        </SEG020>
+        <SEG021>
+            <tipo>LP</tipo>
+            <es>
+                <mensaje>Error de seguridad. La contraseña no cumple con las políticas de configuración establecidas.</mensaje>
+                <descripcion>La contraseña no cumple con las políticas de configuración establecidas.</descripcion>            
+            </es>
+        </SEG021>
+	<SEG022>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error de seguridad.Uno de los usuarios seleccionados tiene roles diferentes asignados.</mensaje>
+			<descripcion>Uno de los usuarios seleccionados tiene roles diferentes asignados.</descripcion>
+		</es>
+	</SEG022>
+	<SEG024>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error en la conexión a la Base de Datos. Configure correctamente la dirección ip y el puerto del servidor.</mensaje>
+			<descripcion>Error en la conexión a la Base de Datos. Posibles causas: Incorrecta configuración del servidor en el sistema de seguridad, el servidor no está disponible en estos momentos.</descripcion>		
+		</es>
+	</SEG024>
+	<SEG023>
+		<tipo>C</tipo>
+		<es>
+			<mensaje>Error en la conexión a la Base de Datos. Contraseña o usuario incorrecto.</mensaje>
+			<descripcion>Contraseña o usuario incorrecto.</descripcion>	
+		</es>
+	</SEG023>
+	<SEG025>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error en la conexión a la Base de Datos. Contraseña o usuario incorrecto.</mensaje>
+			<descripcion>Error en la conexión a la Base de Datos.</descripcion>	
+		</es>
+	</SEG025>
+	<SEG026>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>El usuario no tiene privilegios de administración.</descripcion>	
+		</es>
+	</SEG026>
+	<SEG027>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede eliminar, ha sido asignado a un usuario.</descripcion>	
+		</es>
+	</SEG027>
+	<SEG028>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar un escritorio con el mismo nombre. </descripcion>	
+		</es>
+	</SEG028>
+	
+	<SEG029>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar, Verifique los campos denominación y abreviatura que no esten duplicados.</descripcion>	
+		</es>
+	</SEG029>
+	<SEG030>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una funcionalidad con la misma denominación.</descripcion>	
+		</es>
+	</SEG030>
+	<SEG031>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un parámetro con la misma denominación.</descripcion>	
+		</es>
+	</SEG031>
+	<SEG032>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un servicio con la misma denominación.</descripcion>	
+		</es>
+	</SEG032>
+	<SEG033>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar, verifique los campos denominación y abreviatura que no esten duplicados.</descripcion>	
+		</es>
+	</SEG033>
+	<SEG034>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una función con la misma denominación.</descripcion>	
+		</es>
+	</SEG034>
+	<SEG035>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar una acción con la misma denominación.</descripcion>	
+		</es>
+	</SEG035>
+	<SEG036>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar una acción con la misma abreviatura.</descripcion>	
+		</es>
+	</SEG036>
+	<SEG037>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un escritorio con la misma denominación.</descripcion>	
+		</es>
+	</SEG037>
+	<SEG038>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar, verifique los campos denominación y abreviatura no esten duplicados.</descripcion>	
+		</es>
+	</SEG038>
+	<SEG039>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una expresión con la misma denominación.</descripcion>	
+		</es>
+	</SEG039>
+	<SEG040>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>No se puede adicionar un dominio con la misma denominación.</descripcion>	
+		</es>
+	</SEG040>
+	<SEG041>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un campo de perfil de usuario con la misma denominación.</descripcion>	
+		</es>
+	</SEG041>
+	<SEG042>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un campo de perfil de usuario con el mismo nombre a mostrar.</descripcion>	
+		</es>
+	</SEG042>
+	<SEG043>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un dominio con la misma denominación.</descripcion>	
+		</es>
+	</SEG043>
+	<SEG044>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un gestor con la misma denominación.</descripcion>	
+		</es>
+	</SEG044>
+	<SEG045>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un escritorio con la misma abreviatura.</descripcion>	
+		</es>
+	</SEG045>
+	<SEG046>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un sistema con la misma denominación.</descripcion>	
+		</es>
+	</SEG046>
+	<SEG047>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una sistema con la misma abreviatura.</descripcion>	
+		</es>
+	</SEG047>
+	<SEG048>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una acción con la misma denominación.</descripcion>	
+		</es>
+	</SEG048>
+	<SEG049>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe una acción con la misma abreviatura.</descripcion>	
+		</es>
+	</SEG049>
+	<SEG050>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un servidor con la misma denominación.</descripcion>	
+		</es>
+	</SEG050>
+	<SEG051>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un gestor con la misma denominación.</descripcion>	
+		</es>
+	</SEG051>
+	<SEG052>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Privilegios insuficientes.</mensaje>
+			<descripcion>Ya existe un servicio con el mismo WSDL.</descripcion>	
+		</es>
+	</SEG052>
+	<SEGPASS01>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Contraseña anterior incorrecta. Por favor repita nuevamente la contraseña anterior.</mensaje>
+			<descripcion>Contraseña anterior incorrecta. Por favor repita nuevamente la contraseña anterior.</descripcion>            
+		</es>
+	</SEGPASS01>
+	<SEGDOM01>
+		<tipo>C</tipo>
+		<es>
+			<mensaje>El nuevo dominio no contiene todas las entidades donde el usuario tiene configurado un rol.</mensaje>
+			<descripcion>El nuevo dominio no contiene todas las entidades donde el usuario tiene configurado un rol. ¿Desea modificarlo?</descripcion>            
+		</es>
+	</SEGDOM01>
+	<SEGDOM02>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>El dominio no puede ser modificado porque existen usuarios de este dominio que tienen configurado roles en algunas de las entidades que se van a quitar.</mensaje>
+			<descripcion>El dominio no puede ser modificado porque existen usuarios de este dominio que tienen configurado roles en algunas de las entidades que se van a quitar.</descripcion>            
+		</es>
+	</SEGDOM02>
+	<SEGORAC001>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Ya existe un usuario o un rol con la misma denominación.</mensaje>
+			<descripcion>Ya existe un usuario o un rol con la misma denominación.</descripcion>            
+		</es>
+	</SEGORAC001>
+	<SEGROL01>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>No se puede eliminar el rol. Tiene privelegios asignados.</mensaje>
+			<descripcion>No se puede eliminar el rol. Tiene privelegios asignados.</descripcion>            
+		</es>
+	</SEGROL01>
+	<SEGROL02>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>El rol de bases de dato ya existe.</mensaje>
+			<descripcion>El rol de bases de dato ya existe.</descripcion>            
+		</es>
+	</SEGROL02>
+	<SEGORAC01>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Ya existe un rol o un usuario con esa denominación.</mensaje>
+			<descripcion>Ya existe un rol o un usuario con esa denominación.</descripcion>            
+		</es>
+	</SEGORAC01>
+	<SEG053>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error de conexión.</mensaje>
+			<descripcion>Causas: Usuario o contraseña incorrecta / El servidor no esta en linea.</descripcion>	
+		</es>
+	</SEG053>
+	
+		<SEGPASS01>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Contraseña anterior incorrecta. Por favor repita nuevamente la contraseña anterior.</mensaje>
+				<descripcion>Contraseña anterior incorrecta. Por favor repita nuevamente la contraseña anterior.</descripcion>            
+			</es>
+		</SEGPASS01>
+		<SEGDOM01>
+			<tipo>C</tipo>
+			<es>
+				<mensaje>El nuevo dominio no contiene todas las entidades donde el usuario tiene configurado un rol.</mensaje>
+				<descripcion>El nuevo dominio no contiene todas las entidades donde el usuario tiene configurado un rol. ¿Desea modificarlo?</descripcion>            
+			</es>
+		</SEGDOM01>
+		<SEGDOM02>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>El dominio no puede ser modificado porque existen usuarios de este dominio que tienen configurado roles en algunas de las entidades que se van a quitar.</mensaje>
+				<descripcion>El dominio no puede ser modificado porque existen usuarios de este dominio que tienen configurado roles en algunas de las entidades que se van a quitar.</descripcion>            
+			</es>
+		</SEGDOM02>
+       
+	<!-- Fin de las Excepciónes del Framework -->
+	<!-- Excepciónes del modulo de Usuario -->
+		<!-- Gestionar Usuario -->
+			<EGU001>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de Consulta</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se cargaban los usuarios. Pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU001>
+			<EGU002>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de Consulta</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se cargaban los datos del usuario. pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU002>
+			<EGU003>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al insertar.</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se trataba de insertar el usuario. pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU003>
+			<EGU004>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al modificar.</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se trataba de modificar el usuario. pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU004>
+			<EGU005>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error de concurrencia al modificar.</mensaje>
+					<descripcion>Los datos del usuario fueron modificados por otra persona. Por favor recargue los datos e intente realizar la modificación nuevamente.</descripcion>			
+				</es>
+			</EGU005>
+			<EGU006>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al eliminar.</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se trataba de eliminar el usuario. pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU006>
+			<EGU007>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al eliminar.</mensaje>
+					<descripcion>Ocurrió un error en el servidor mientras se trataba de eliminar el usuario. pónganse en contacto con el administrador del sistema.</descripcion>			
+				</es>
+			</EGU007>
+			<EGU008>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al validar la repitición de la clave de acceso.</mensaje>
+					<descripcion>La clave de acceso no puede repetirse, usted está poniendo una clave que puso anteriormente. Por favor ponga otra.</descripcion>			
+				</es>
+			</EGU008>
+			<EGU009>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al validar la confirmación de la clave de acceso.</mensaje>
+					<descripcion>La clave y la confirmación de la clave deben ser iguales. Por favor repita la confirmación nuevamente.</descripcion>			
+				</es>
+			</EGU009>
+			<EGU010>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Error al validar la existencia del alias del usuario.</mensaje>
+					<descripcion>El alias del usuario no puede repetirse, usted está tratando de asignar un alias que ya fue asignado a otra persona. Por favor ponga otro.</descripcion>			
+				</es>
+			</EGU010>
+			<EGU011>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Al modificar el identificador de la persona es un campo obligatorio.</mensaje>
+					<descripcion>Al modificar el identificador de la persona es un campo obligatorio.</descripcion>			
+				</es>
+			</EGU011>
+			<EGU012>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador de la persona debe ser numérico.</mensaje>
+					<descripcion>El identificador de la persona debe ser numérico.</descripcion>			
+				</es>
+			</EGU012>
+			<EGU013>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>Al modificar la versión es un campo obligatorio.</mensaje>
+					<descripcion>Al modificar, la versión es un campo obligatorio</descripcion>			
+				</es>
+			</EGU013>
+			<EGU014>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>La versión debe ser numérica.</mensaje>
+					<descripcion>La versión debe ser numérica.</descripcion>			
+				</es>
+			</EGU014>
+			<EGU015>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El alias del usuario es un campo obligatorio.</mensaje>
+					<descripcion>El alias del usuario es un campo obligatorio.</descripcion>			
+				</es>
+			</EGU015>
+			<EGU016>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El alias del usuario debe ser solo letras.</mensaje>
+					<descripcion>El alias del usuario debe ser solo letras.</descripcion>			
+				</es>
+			</EGU016>
+			<EGU017>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El nombre de la persona es un campo obligatorio.</mensaje>
+					<descripcion>El nombre de la persona es un campo obligatorio.</descripcion>			
+				</es>
+			</EGU017>
+			<EGU018>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El nombre de la persona debe ser solo letras.</mensaje>
+					<descripcion>El nombre de la persona debe ser solo letras.</descripcion>			
+				</es>
+			</EGU018>
+			<EGU019>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El primer apellido de la persona debe ser solo letras.</mensaje>
+					<descripcion>El primer apellido de la persona debe ser solo letras.</descripcion>			
+				</es>
+			</EGU019>
+			<EGU020>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El primer apellido de la persona debe ser solo letras.</mensaje>
+					<descripcion>El primer apellido de la persona debe ser solo letras.</descripcion>			
+				</es>
+			</EGU020>
+			<EGU021>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El segundo apellido de la persona debe ser solo letras.</mensaje>
+					<descripcion>El segundo apellido de la persona debe ser solo letras.</descripcion>			
+				</es>
+			</EGU021>
+			<EGU022>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador del idioma es un campo obligatorio.</mensaje>
+					<descripcion>El identificador del idioma es un campo obligatorio.</descripcion>			
+				</es>
+			</EGU022>
+			<EGU023>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador del idioma debe ser numérico.</mensaje>
+					<descripcion>El identificador del idioma debe ser numérico.</descripcion>			
+				</es>
+			</EGU023>
+			<EGU024>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador del tema es un campo obligatorio.</mensaje>
+					<descripcion>El identificador del tema es un campo obligatorio.</descripcion>			
+				</es>
+			</EGU024>
+			<EGU025>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador del tema debe ser numérico.</mensaje>
+					<descripcion>El identificador del tema debe ser numérico.</descripcion>			
+				</es>
+			</EGU025>
+			<EGU026>
+				<tipo>LP</tipo>
+				<es>
+					<mensaje>El identificador de la especialidad debe ser numérico.</mensaje>
+					<descripcion>El identificador de la especialidad debe ser numérico.</descripcion>			
+				</es>
+			</EGU026>
+		<!-- Fin de Gestionar Usuario -->
+	<!-- Fin de las Excepciónes del modulo de Usuario -->
+	<!-- Excepciónes del modulo Portal -->
+		<EP001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de administración de perfiles.</mensaje>
+				<descripcion>Hay problemas con la configuración del perfil del usuario. Por favor intente acceder al sistema más tarde. Si el problema persiste contacte al administrador.</descripcion>
+			</es>
+		</EP001>
+		<EP002>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de configuración del tema de usuario</mensaje>
+				<descripcion>El usuario no tiene asignado un tema para acceder al sistema. Por favor contacte al administrador del sistema</descripcion>
+			</es>
+		</EP002>
+		<EP003>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de Framework. No se pudo encontrar el fichero ext-all.css</mensaje>
+				<descripcion>Ocurrió un error interno del sistema. Por favor contacte al administrador.</descripcion>
+			</es>
+		</EP003>
+		<EP004>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de consulta</mensaje>
+				<descripcion>No se pudieron cargar los subsistemas.</descripcion>
+			</es>
+		</EP004>
+		<EP005>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al cargar el menú horizontal.</mensaje>
+				<descripcion>No se pudo cargar el menú horizontal de funcionalidades. Por favor intente acceder al sistema de nuevo. Si el problema persiste contacte al administrador.</descripcion>
+			</es>
+		</EP005>
+		<EP006>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al cargar el menú vertical.</mensaje>
+				<descripcion>No se pudieron cargar los módulos en el menú vertical. Por favor intente acceder al sistema de nuevo. Si el problema persiste contacte al administrador.</descripcion>
+			</es>
+		</EP006>
+		<EP007>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al cargar el menú de inicio.</mensaje>
+				<descripcion>No se pudieron cargar los módulos y/o funcionalidades en el menú de inicio. Por favor intente acceder al sistema de nuevo. Si el problema persiste contacte al administrador.</descripcion>
+			</es>
+		</EP007>
+		<EP008>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al cargar los dominios.</mensaje>
+				<descripcion>Acceso denegado al sistema. Su usuario está siendo utilizado por otra persona.Por favor intente acceder al sistema de nuevo. Si el problema persiste contacte al administrador.</descripcion>
+			</es>
+		</EP008>
+		<EP009>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>El usuario no tiene configurado un rol para acceder a la entidad.</mensaje>
+				<descripcion>Acceso denegado al sistema. Usted no tiene los privilegios suficientes para acceder a los sistemas instalados en la entidad selecionada.</descripcion>
+			</es>
+		</EP009>
+	<!-- Fin de las Excepciónes del modulo Portal -->
+	<!-- Excepciónes del componente de reglas -->
+		<IE001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Una de las reglas no devolvió el valor esperado.</descripcion>
+			</es>
+		</IE001>
+		<IR001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Una regla no existe. Por favor revise el fichero de configuración de reglas.</descripcion>
+			</es>
+		</IR001>
+		<IR002>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Una regla no devuelve el valor esperado.</descripcion>
+			</es>
+		</IR002>
+		<IR003>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Un hecho no existe.</descripcion>
+			</es>
+		</IR003>
+		<IR004>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Un hecho no tiene el valor esperado.</descripcion>
+			</es>
+		</IR004>
+		<IR005>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Ocurrió un error evaluando una de las reglas.</mensaje>
+				<descripcion>Una regla no está bien definida.</descripcion>
+			</es>
+		</IR005>
+	<!-- Fin de las Excepciónes del modulo Portal -->
+	<!-- Excepciónes del componente de reglas -->
+		<EVEC007>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de validación. El campo idestructura económica es obligatorio.</mensaje>
+				<descripcion>Prueba</descripcion>
+			</es>
+		</EVEC007>
+		<EVEC008>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de configuración del tema del usuario</mensaje>
+				<descripcion>Prueba</descripcion>
+			</es>
+		</EVEC008>
+		<EVEC009>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error de configuración del tema del usuario</mensaje>
+				<descripcion>Prueba 3</descripcion>
+			</es>
+		</EVEC009>
+	<!-- Fin de las Excepciónes del modulo Portal -->
+	<!-- Inicio de las Excepciónes del modulo de inicio-->
+		<EGI001>
+			<tipo>LP</tipo>
+			<es>
+				<mensaje>Error al insertar.</mensaje>
+				<descripcion>Ocurrió un error en el servidor mientras se trataba de insertar una traza. Pónganse en contacto con el administrador del sistema.</descripcion>			
+			</es>
+		</EGI001>
+	<!-- Fin de las Excepciónes del modulo de inicio-->
+
+	<!-- Excepciónes de Estructura y Composicion-->
+	<EC01>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error entrando datos.</mensaje>
+			<descripcion>Compruebe hay campos vacíos.</descripcion>			
+		</es>
+	</EC01>
+	<EC02>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error entrando datos.</mensaje>
+			<descripcion>El campo  debe ser numérico.</descripcion>			
+		</es>
+	</EC02>
+	<EC03>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error entrando datos.</mensaje>
+			<descripcion>Error el introducir la fecha.</descripcion>			
+		</es>
+	</EC03>
+	<EC04>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error entrando datos.</mensaje>
+			<descripcion>Hay campos con valores incorrectos.</descripcion>			
+		</es>
+	</EC04>
+	<EC05>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al eliminar con llaver foráneas.</mensaje>
+			<descripcion>El objeto no se puede eliminar está siendo usado.</descripcion>			
+		</es>
+	</EC05>
+	<EC06>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al insertar por no existir la especialidad.</mensaje>
+			<descripcion>La especialidad debe ser definido en el nomenclador.</descripcion>			
+		</es>
+	</EC06>
+	<EC07>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al insertar por no existir la nivel estructural.</mensaje>
+			<descripcion>El nivel estructural debe ser definido en el nomenclador.</descripcion>			
+		</es>
+	</EC07>
+	<EC08>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al insertar por no existir el dpa.</mensaje>
+			<descripcion>Localizacion de la estructura no existente.</descripcion>			
+		</es>
+	</EC08>
+	<EC09>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error validando las fechas.</mensaje>
+			<descripcion>La fecha de inicio debe ser menor que la de fin.</descripcion>			
+		</es>
+	</EC09>
+	<EC10>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error enviando id.</mensaje>
+			<descripcion>Id no enviado.</descripcion>			
+		</es>
+	</EC10>
+	<EC11>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Estructura interna no seleccionada.</descripcion>			
+		</es>
+	</EC11>
+	<EC12>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Especialidad no seleccionada.</descripcion>			
+		</es>
+	</EC12>
+	<EC13>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Tipo de cifra no seleccionado.</descripcion>			
+		</es>
+	</EC13>	
+	<EC14>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Categoría civil no seleccionada.</descripcion>			
+		</es>
+	</EC14>
+	<EC15>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Nomenclador de cargo civil no seleccionada.</descripcion>			
+		</es>
+	</EC15>
+	<EC16>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Salario no seleccionado.</descripcion>			
+		</es>
+	</EC16>
+	<EC17>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Grupo de complejidad no seleccionada.</descripcion>			
+		</es>
+	</EC17>
+	<EC18>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Escala salarial no seleccionada.</descripcion>			
+		</es>
+	</EC18>
+	<EC19>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error al seleccionar un nomenclador.</mensaje>
+			<descripcion>Clasificación no seleccionada.</descripcion>			
+		</es>
+	</EC19>
+	<EC20>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>No existe grado militar en la base de datos..</mensaje>
+			<descripcion>Grado militar no seleccionada.</descripcion>			
+		</es>
+	</EC20>
+	<EC21>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Nomenclador de cargo militar no seleccionado.</mensaje>
+			<descripcion>Cargo militar no seleccionado.</descripcion>			
+		</es>
+	</EC21>
+	<EC22>
+		<tipo>LP</tipo>
+		<es>
+			<mensaje>Error de entrada de datos.</mensaje>
+			<descripcion>Nombre de la tabla no definido.</descripcion>			
+		</es>
+	</EC22>
+
+
+</Excepciones>

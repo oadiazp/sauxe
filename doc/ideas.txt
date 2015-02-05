@@ -1,0 +1,23 @@
+1. Del lado del servidor se deben generar los xtypes de cada chart. Para esto se debe hacer una instancia de cada vista y buscar en el Xml los datos que hacen falta para poder construir ese gráfico, la idea es que toda la configuración debe ser hija de la vista en el Xml de tal manera que el trabajo del lado del servidor sea exclusivamente recorrer el Xml y convertirlo a json.
+
+2. Del lado del cliente se reciben estos xtypes y algún componente debe implementar un patrón Factory pero en vez de recibir el nombre de la clase recibe la cantidad de charts a dibujar. En función de esto ese Factory retorna un array con los placeholders donde caen cada uno de los charts.
+
+3. Se deben crear clases hijas de los charts existentes en ExtJS para que soporten el uso de Xmpp.
+
+4. Una vez creadas las instancias se debe buscar de lado del servidor el código del evento a que está sujeto ese chart y conectarlo con el mismo.
+
+5. Una vez que llegue un evento del lado del cliente le proceder es siempre el mismo: recargar el grid con los datos enviados desde el servidor.
+
+4/2/2012
+
+Lista la v0.1
+
+Ideas para la versión 0.2
+
+1. Mover la instanciación del MB para el portal.
+2. Quitar el cable que hay en el nombre del usuario al que se le envían las notificaciones. Debo obtener el roster de los conectados.
+3. Empezar a trabajar en el diseño de Sasha.
+4. Refactorizar el JS.
+5. Crear el usuario Xmpp una vez que se crea uno en seguridad.
+6. Mejorar la encriptación del password del cliente hacia el servidor.
+7. Terminar la implementación de las demás vistas e icluir todos los tipos de vista que sopota Ext.

@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weaver>
+	<usuario>         
+		<GestusuarioController>
+			<modificarusuarioAction aspecttemplate="aspectemplate1"/>
+			<insertarusuarioAction aspecttemplate="aspectemplate1"/>
+			<eliminarusuarioAction aspecttemplate="aspectemplate2"/>
+		</GestusuarioController>
+	</usuario>
+	<!--<portal>
+		<PortalController>
+			<closeportalAction aspecttemplate="aspectemplate2"/>
+			<entraralsistemaAction aspecttemplate="aspectemplate2"/>
+		</PortalController>
+		<IndexController>
+			<entraralsistemaAction aspecttemplate="aspectemplate2"/>
+		</IndexController>
+	</portal>-->
+	<seguridad>
+		<GestusuarioController>
+			<modificarusuarioAction aspecttemplate="aspectemplate2"/>
+		</GestusuarioController>
+		<GestnomdominioController>
+			<modificarnomdominioAction aspecttemplate="aspectemplate2"/>
+		</GestnomdominioController>
+		<GestrolesbdController>
+			<conectarseBDAction aspecttemplate="aspectemplate2"/>
+		</GestrolesbdController>
+	</seguridad>
+	<contabilidad>
+		<contabilidad_financiera>			
+			<cierre>
+				<CierreperiodoController>
+					<cerrarperiodoAction aspecttemplate="aspectemplate1"/>
+				</CierreperiodoController>
+			</cierre>
+		</contabilidad_financiera>
+	</contabilidad>
+	<capital_humano>
+		<persona>
+			<GestionarpersonaController>
+				<insertarusuarioAction aspecttemplate="aspectemplate2"/>
+				<modificarpersonaAction aspecttemplate="aspectemplate1"/>
+				<eliminarusuarioAction aspectemplate1="aspectemplate1"/>
+			</GestionarpersonaController>
+		</persona>
+		<puesto_trabajo>
+			<GestionarpuestotrabajoController>
+				<adicionarpuestotrabajoAction aspecttemplate="aspectemplate2"/>
+				<modificarpuestotrabajoAction aspecttemplate="aspectemplate2"/>
+				<eliminarpuestotrabajoAction aspecttemplate="aspectemplate2"/>
+			</GestionarpuestotrabajoController>
+				
+			<GestionarplantillapuestotrabajoController>
+				<insertarNomPlantillaPtAction aspecttemplate="aspectemplate2"/>
+				<modificarNomPlantillaPtAction aspecttemplate="aspectemplate2"/>
+				<eliminarplantillapuestotrabajoAction aspecttemplate="aspectemplate2"/>
+			</GestionarplantillapuestotrabajoController>  
+		</puesto_trabajo>		
+		<pagos_adicionales>
+			<GestionarpagosadicionalesController>
+				<cargarpagosadicionalesAction aspecttemplate="aspectemplate2"/>				
+				<insertarpagoAction aspecttemplate="aspectemplate2"/> 
+				<modificarpagoAction aspecttemplate="aspectemplate2"/>				
+				<eliminarpagosAction aspecttemplate="aspectemplate2"/>
+			</GestionarpagosadicionalesController> 
+		</pagos_adicionales>
+    <incidencias>
+		  <GestimpuestoController>
+		    <insertarimpuestoAction  aspecttemplate="aspectemplate2" />
+			<modificarimpuestoAction aspecttemplate="aspectemplate2" />
+		  </GestimpuestoController>
+		  <GestincidenciaController>
+		    <insertarincidenciaAction  aspecttemplate="aspectemplate2" />
+        <modificarincidenciaAction aspecttemplate="aspectemplate2" />
+        <eliminarincidenciaAction aspecttemplate="aspectemplate2" />
+		  </GestincidenciaController>
+		  <AsociarimpincController>
+		  	<asociarincidimpuestoAction aspecttemplate="aspectemplate2"/>
+		  </AsociarimpincController>
+		  <GestincidenciatrabController>
+		  	<registraincidenciatrabAction aspecttemplate="aspectemplate2"/>
+		  	<modificaincidenciatrabAction aspecttemplate="aspectemplate2"/>
+		  	<eliminarincidenciatrabAction aspecttemplate="aspectemplate2"/>
+		  </GestincidenciatrabController>
+		</incidencias>
+		<trabajador>
+			<DatoscontablesController>
+				<InsertardatoscontablesAction aspecttemplate="aspectemplate1"/>
+			</DatoscontablesController>
+			<EmitirmovimientoaltaController>
+				<adicionarmovaltaAction aspecttemplate="aspectemplate2"/>
+			</EmitirmovimientoaltaController> 
+			<EmitirmovimientobajaController>
+				<modificarMovimientoAction aspecttemplate="aspectemplate1"/>
+			</EmitirmovimientobajaController> 
+			<EmitirmovimientoreubicacionController>
+				<insertarModmovnominaAction aspecttemplate="aspectemplate2" />
+				<emitirmovimientoreubicacionAction aspecttemplate="aspectemplate2" />
+			</EmitirmovimientoreubicacionController> 
+		</trabajador>
+		<nomina>
+			<GestionartipoajusteController>
+				<insertartipoajusteAction aspecttemplate="aspectemplate1"/> 
+				<modificartipoajusteAction aspecttemplate="aspectemplate1"/>
+				<eliminartipoajusteAction aspecttemplate="aspectemplate2"/>
+			</GestionartipoajusteController> 
+			<GestionarperiodopagoController>
+				<insertarperiododepagoAction aspecttemplate="aspectemplate1"/> 	
+				<modificarperiodopagoAction aspecttemplate="aspectemplate1"/>
+					
+				
+			</GestionarperiodopagoController> 
+			<GestionarnominaController>
+				<insertarnominaAction aspecttemplate="aspectemplate1"/>
+				<insertardocajusteAction aspecttemplate="aspectemplate1"/>
+				<modificarnominaAction aspecttemplate="aspectemplate1"/>
+				<procesarnominaAction aspecttemplate="aspectemplate2"/>
+				<confirmarAction aspecttemplate="aspectemplate2"/>
+				<eliminarnominaAction aspecttemplate="aspectemplate2"/>
+				<cargartrabajadoresAction aspecttemplate="aspectemplate2"/>	
+			</GestionarnominaController>
+			<GestionardocajusteController>
+				<insertardocajusteAction aspecttemplate="aspectemplate1"/>
+				<eliminardocajusteAction aspecttemplate="aspectemplate2"/>
+			</GestionardocajusteController>
+		</nomina>
+      <submayores>
+			<GestionarprogramaController>
+				<insertarprogramaAction aspecttemplate="aspectemplate2" /> 
+				<eliminarprogramaAction aspecttemplate="aspectemplate1" /> 
+          		<modificarprogramaAction aspecttemplate="aspectemplate1" /> 
+        	</GestionarprogramaController>
+	    	<GestionartiporetencionController>
+		 		<insertartiporetencionAction aspecttemplate="aspectemplate1" />
+	      		<eliminartiporetencionAction aspecttemplate="aspectemplate1" />		  
+		  		<modificartiporetencionAction aspecttemplate="aspectemplate1" />
+			</GestionartiporetencionController>
+			<GestionarconfiguracionsubmayorvacController>
+		 		<modificarConfiguracionsubmayorvacAction aspecttemplate="aspectemplate1" />
+			</GestionarconfiguracionsubmayorvacController>
+			<GestionarsubmayorvacacionesController>
+				<insertarsubmayorvacacionesAction aspecttemplate="aspectemplate1" />
+				<ajustesubvacacionesAction aspecttemplate="aspectemplate1" />
+			</GestionarsubmayorvacacionesController>
+            <GestionarsubmayorretencionesController>
+			    <modificarsubmayorretencionesAction aspecttemplate="aspectemplate2"/>
+			    <insertarsubmayorretencionesAction aspecttemplate="aspectemplate2" />				
+			</GestionarsubmayorretencionesController>			
+    	</submayores>
+    <evaluacion>
+    	<planilla>
+			<GestionartipoplanillaController>
+				<insertartiposplanillasAction aspecttemplate="aspectemplate2"/>
+				<modificartiposplanillasAction aspecttemplate="aspectemplate2"/>
+			</GestionartipoplanillaController>
+			<GestionartiporecomendacionesController>
+				<insertartiporecomendacionesAction aspecttemplate="aspectemplate2"/>
+				<modificartiporecomendacionesAction aspecttemplate="aspectemplate2"/>
+			</GestionartiporecomendacionesController>
+			<GestionarplanillaController>
+			<insertarplanillasindicadorAction aspecttemplate="aspectemplate2"/>
+			<insertarindicadoresAction aspecttemplate="aspectemplate2"/>
+			</GestionarplanillaController>
+		</planilla>
+		<indicadores>
+			<GestionarnomescalaController>
+				<insertarescalacualitativaAction aspecttemplate="aspectemplate2"/>
+				<modificarescalacualitativaAction aspecttemplate="aspectemplate2"/>
+				<insertarescalasrangoAction aspecttemplate="aspectemplate2"/>
+				<modificarescalasrangoAction aspecttemplate="aspectemplate2"/>
+			</GestionarnomescalaController>
+			<GestionarnomindicadoresController>
+				<insertarnomindicadoresAction aspecttemplate="aspectemplate2"/>
+				<modificarnomindicadorAction aspecttemplate="aspectemplate2"/>
+			</GestionarnomindicadoresController>
+		</indicadores>
+	</evaluacion>
+	
+</capital_humano>
+	
+	<logistica>
+		<inventario>
+			<apertura>
+				<GestaperturaController>					
+					<crearaperturaAction aspecttemplate="aspectemplate2"/>
+					<gestaperturaAction aspecttemplate="aspectemplate2"/>
+					<eliminaraperturaAction aspecttemplate="aspectemplate2"/>
+					<confirmaraperturaAction aspecttemplate="aspectemplate2"/>
+					<eliminarProductoAction aspecttemplate="aspectemplate2"/>
+					<insertarultmovAction aspecttemplate="aspectemplate2"/>
+					<insertargrupoAction aspecttemplate="aspectemplate2"/>
+					<modificarproductoAction aspecttemplate="aspectemplate2"/>
+				</GestaperturaController>
+			</apertura>
+			<ajuste>
+					<GestajusteinventarioController>
+					<crearajusteAction aspecttemplate="aspectemplate2"/>
+					<modificarajusteAction aspecttemplate="aspectemplate2"/>
+					<eliminarajusteAction aspecttemplate="aspectemplate2"/>
+					<gestajusteinventarioAction aspecttemplate="aspectemplate2"/>
+					<!--contabilizarAction  aspecttemplate="aspectemplate1"/-->
+				</GestajusteinventarioController>
+				
+				<RegistrarProductosController>
+					<eliminarproductoAction aspecttemplate="aspectemplate1"/>
+				</RegistrarProductosController>
+			</ajuste>
+			<baja>
+			<GestbajainventarioController>
+			<modificarbajaAction aspecttemplate="aspectemplate2"/>
+			<eliminarbajaAction aspecttemplate="aspectemplate2"/>
+			<gestbajainventarioAction aspecttemplate="aspectemplate2"/>
+			</GestbajainventarioController>
+			
+			<RegistrarproductosController>
+			<crearproductoAction aspecttemplate="aspectemplate2"/>
+			</RegistrarproductosController>
+			</baja>
+			<cierre>
+			  <GestcierreController>
+			   <gestcierreAction aspecttemplate="aspectemplate2"/>
+			 </GestcierreController>
+			</cierre>
+			<inventario>
+				<GestinventarioController>
+					<generarhojainventarioAction aspecttemplate="aspectemplate2"/>
+					<gestinventarioAction aspecttemplate="aspectemplate2"/>
+					<modificarhojainventarioAction aspecttemplate="aspectemplate2"/>
+					<!--<aprobardocumentoAction aspecttemplate="aspectemplate2"/>-->
+				</GestinventarioController>
+			</inventario>
+			<recepcion>
+				<GestinfrecepcionController>
+                   <gestinfrecepcionAction aspecttemplate="aspectemplate2"/> 
+                   <!--<contabilizarAction aspecttemplate="aspectemplate2"/>-->
+				   <confirmarAction aspecttemplate="aspectemplate2"/>
+				   <cancelarrecepcionAction aspecttemplate="aspectemplate2" />
+				   <modificarprodrecepcionAction aspecttemplate="aspectemplate2" />
+				</GestinfrecepcionController>
+				<GestinfdiferenciaController>
+					<!-- Aqui van las validaciones de informe de diferencia -->
+                     <aprobarAction aspecttemplate="aspectemplate2"/> 
+				</GestinfdiferenciaController>
+			</recepcion>
+			<combustible>
+				<Gestscm122Controller>
+                   <contabilizarAction aspecttemplate="aspectemplate1"/>
+                   <contabilizarAction aspecttemplate="aspectemplate1"/>
+                   <gestscm122Action aspecttemplate="aspectemplate2"/>
+				   <cargarentregaraAction aspecttemplate="aspectemplate2"/>				
+				</Gestscm122Controller>
+                <Gestscm125Controller>
+                   <gestscm125Action aspecttemplate="aspectemplate2"/>			
+				</Gestscm125Controller>					
+			</combustible>
+			<submayor>
+				<SubmayorController>
+                   <submayorAction aspecttemplate="aspectemplate2"/>
+				</SubmayorController>				
+			</submayor>
+			<utiles>
+				<LoteController>
+					<!--<adicionarloteAction aspecttemplate="aspectemplate2"/>-->
+					<eliminarloteAction aspecttemplate="aspectemplate2"/>
+				</LoteController>
+			</utiles>
+			<configuracion>
+				<GestestructubicacionController>
+					<modificarAreaAction aspecttemplate="aspectemplate2"/>	
+					<eliminarAreaAction aspecttemplate="aspectemplate2"/>
+					<eliminarEstUbicAction aspecttemplate="aspectemplate2"/>
+					<gestestructubicacionAction aspecttemplate="aspectemplate2"/>
+				</GestestructubicacionController>
+				<GestcfgalmacenController>
+					<gestcfgalmacenAction aspecttemplate="aspectemplate2"/>
+				</GestcfgalmacenController>
+		    </configuracion>
+			<nomencladores>
+			        <GestmarcasController>
+				        <gestmarcasAction  aspecttemplate="aspectemplate1"/>
+				    </GestmarcasController>
+					<GestnomgrupoproductoController>
+				        <modDescripcionAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomgrupoproductoController>
+					<GestnomconceptoplanController>
+				        <modDescripcionAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomconceptoplanController>
+					<GestnomdestfinalController>
+				        <modDescripcionAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomdestfinalController>		
+					<GestnomcalidadmovdiferenciaController>
+				        <modDescripcionAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomcalidadmovdiferenciaController>	
+					<GestnomcategoriaController>
+				        <modDescripcionAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomcategoriaController>					
+				    <GestnomproductoController>
+				    	<gestnomproductoAction  aspecttemplate="aspectemplate2"/>
+						<devolverdescripcionesAction  aspecttemplate="aspectemplate2"/>
+				    </GestnomproductoController>
+			</nomencladores>
+            <conciliacion>
+				<GestconciliacionController>
+                   <gestconciliacionAction aspecttemplate="aspectemplate2"/>
+                   <cargargriddocsAction aspecttemplate="aspectemplate2"/>
+                   <confirmarAction aspecttemplate="aspectemplate2"/>
+                   <cancelarestadoAction aspecttemplate="aspectemplate2"/>
+                   <eliminarconciliacionAction aspecttemplate="aspectemplate2"/>
+                   <cargarclientesAction aspecttemplate="aspectemplate2"/>
+                   <cargartransferenciasAction aspecttemplate="aspectemplate2"/>
+                   <modificarconciliacionAction aspecttemplate="aspectemplate2"/>
+                   <aprobarAction aspecttemplate="aspectemplate2"/>
+                   <noaprobarAction aspecttemplate="aspectemplate2"/>
+                   <conciliarAction aspecttemplate="aspectemplate2"/>
+                   <aceptarconciliarAction aspecttemplate="aspectemplate2"/>
+                   <contabilizarAction aspecttemplate="aspectemplate2"/>
+                   <eliminartransferenciaAction aspecttemplate="aspectemplate2"/>
+              </GestconciliacionController>
+            </conciliacion>
+            <despacho>
+                <GestordendespachoController>
+					<gestordendespachoAction aspecttemplate="aspectemplate2"/>
+					<cargardatosencabdespachoAction aspecttemplate="aspectemplate2"/>
+					<constgrideditclienteAction aspecttemplate="aspectemplate2"/>
+                    <insertarproductosordenAction aspecttemplate="aspectemplate2"/>  
+                    <eliminarprod108Action aspecttemplate="aspectemplate1"/>  
+                    <cargarprodAction aspecttemplate="aspectemplate2"/>
+                    <cargarproductos108Action aspecttemplate="aspectemplate2"/>
+                    <cargarclientesAction aspecttemplate="aspectemplate2"/>
+                    <cargarordenesentregaAction aspecttemplate="aspectemplate2"/>
+                    <cancelarestadoAction aspecttemplate="aspectemplate2"/>
+                    <noaprobarAction aspecttemplate="aspectemplate2"/>
+                    <cargarcomboconceptoplanAction aspecttemplate="aspectemplate2"/>
+                    <verestadoejecucionAction aspecttemplate="aspectemplate2"/>
+                    <eliminardespachoAction aspecttemplate="aspectemplate2"/>
+                    <confirmardespachoAction aspecttemplate="aspectemplate2"/>
+                    <cargardatosaprobarAction aspecttemplate="aspectemplate2"/>
+              
+                    <aprobarcancelarAction aspecttemplate="aspectemplate2"/>
+                    <noaprobarcancelarAction aspecttemplate="aspectemplate2"/>
+					<verificarclienteAction aspecttemplate="aspectemplate2"/>
+                    <docencontradosAction aspecttemplate="aspectemplate2"/>
+                   <!-- <adicionarordendespAction aspecttemplate="aspectemplate2"/>-->
+                    <cargardatmodificarAction aspecttemplate="aspectemplate2"/>
+                    <modificardespachoAction aspecttemplate="aspectemplate2"/>
+                    <modificarclientesordenAction aspecttemplate="aspectemplate2"/>
+                    <cargarcumplimientoAction aspecttemplate="aspectemplate2"/>
+                    <cargarcumpplanAction aspecttemplate="aspectemplate2"/>
+                    <cargatreeclientesAction aspecttemplate="aspectemplate2"/>
+                    <cancelarasignacionesAction aspecttemplate="aspectemplate2"/>
+                    <cargarasignacionesAction aspecttemplate="aspectemplate1"/>
+                    <insertarcantcancelarAction aspecttemplate="aspectemplate2"/>
+                    <cargarimportetotalAction aspecttemplate="aspectemplate2"/>
+                    <confirmarcancelarasigAction aspecttemplate="aspectemplate2"/>
+                    <constgridclienteplanabastAction aspecttemplate="aspectemplate2"/>
+                    <cargarprodplanabastAction aspecttemplate="aspectemplate1"/>
+                    <adicionarinformeAction aspecttemplate="aspectemplate1"/>
+                    <cantdisponibleAction aspecttemplate="aspectemplate2"/>
+                    <buscardocelabprepAction aspecttemplate="aspectemplate2"/>
+                    <addprodplanabastAction aspecttemplate="aspectemplate1"/>
+                    <insertarprodplanabastAction aspecttemplate="aspectemplate2"/>
+                    <eliminarprodplanAction aspecttemplate="aspectemplate1"/>
+                    <verificarprodregistradosAction aspecttemplate="aspectemplate1"/>
+                </GestordendespachoController>
+         </despacho>
+		<generardocsalida>
+			<GenerardocController>
+				<generardocAction aspecttemplate="aspectemplate2"/>
+				<contabilizarAction aspecttemplate="aspectemplate2"/>
+				<confirmardocumentoAction aspecttemplate="aspectemplate2"/>	
+			</GenerardocController>
+		</generardocsalida>
+		<generarcomprobante>
+			<GestcomprobanteController>
+				<gestcomprobanteAction aspecttemplate="aspectemplate2"/>
+			</GestcomprobanteController>
+		</generarcomprobante>
+		</inventario>
+		<facturacion>
+			<facturacion>
+			    <GestfacturacionController>
+                   <gestfacturacionAction aspecttemplate="aspectemplate2"/>
+                   <!--<cancelarfacturaAction aspecttemplate="aspectemplate2"/>-->
+                   <contabilizarfacturaAction aspecttemplate="aspectemplate2"/>
+                   <confirmarfacturaAction aspecttemplate="aspectemplate2"/>
+				</GestfacturacionController>
+			</facturacion>
+			<servicio>
+				<nomencladores>
+					<GestnomservicioController>
+						<gestnomservicioAction aspecttemplate="aspectemplate2"/>
+					</GestnomservicioController>
+				</nomencladores>	
+			</servicio>
+			<nomencladores>
+					<GestnomconceptoclienteController>
+					   <gestnomconceptoclienteAction aspecttemplate="aspectemplate2"/>
+					   <devuelveseleccionadosAction aspecttemplate="aspectemplate2"/>
+					</GestnomconceptoclienteController>
+					<GestionarnomconceptoController>
+					   <gestionarnomconceptoAction aspecttemplate="aspectemplate2"/>
+					</GestionarnomconceptoController>
+			</nomencladores>
+			<configuracion>
+				<MatrizprecioController>
+				    <matrizprecioAction aspecttemplate="aspectemplate2"/> 
+					<adicionarvalorAction aspecttemplate="aspectemplate2"/>
+				</MatrizprecioController>
+				<MatriztarifaController>
+					<matriztarifaAction aspecttemplate="aspectemplate2"/>
+					<adicionarvalorAction aspecttemplate="aspectemplate2"/>
+				</MatriztarifaController>
+			</configuracion>
+		</facturacion>
+		<utiles>
+			<GestubicproductoController>
+				<antescargarAction aspecttemplate="aspectemplate2"/>
+				<adicionarprodareaAction aspecttemplate="aspectemplate2"/>
+			</GestubicproductoController>
+		</utiles>
+		<activos_fijos>
+			<modulos>
+			  <GestaperturaController>					
+				  <crearaperturaAction aspecttemplate="aspectemplate2"/>
+			  </GestaperturaController>
+			</modulos>
+			<aft>
+			  <ActivofijotangibleController>					
+					<eliminarAction aspecttemplate="aspectemplate1"/>
+					<modificaraftAction aspecttemplate="aspectemplate2"/>
+					<insertaraftAction aspecttemplate="aspectemplate1"/>
+				</ActivofijotangibleController>
+			</aft>
+			<nomencladores>
+				<GrupoController>					
+					<eliminargrupoAction aspecttemplate="aspectemplate1"/>
+					<insertargrupoAction aspecttemplate="aspectemplate1"/>
+					<insertargrupoentidadAction aspecttemplate="aspectemplate1"/>
+					<insertarsubgrupoAction aspecttemplate="aspectemplate1"/>
+					<modificargrupoAction aspecttemplate="aspectemplate2"/>
+				</GrupoController>
+				<MarcamodeloController>					
+					<eliminarAction aspecttemplate="aspectemplate1"/>
+					<modificarAction aspecttemplate="aspectemplate2"/>
+					<insertarmarcaAction aspecttemplate="aspectemplate1"/>
+					<insertarmodeloAction aspecttemplate="aspectemplate1"/>
+				</MarcamodeloController>
+				<NomareaController>					
+					<eliminarAction aspecttemplate="aspectemplate1"/>
+					<modificarAction aspecttemplate="aspectemplate2"/>
+					<insertarAction aspecttemplate="aspectemplate1"/>
+				</NomareaController>
+				<NomrazaController>	
+					<eliminarAction aspecttemplate="aspectemplate1"/>
+					<modificarAction aspecttemplate="aspectemplate2"/>
+					<adicionarAction aspecttemplate="aspectemplate1"/>
+				</NomrazaController>
+				<TipocombustibleController>	
+					<eliminarAction aspecttemplate="aspectemplate1"/>
+					<modificarAction aspecttemplate="aspectemplate2"/>
+					<adicionarAction aspecttemplate="aspectemplate1"/>
+				</TipocombustibleController>
+				<OperacionController>
+				<!--<eliminarAction aspecttemplate="aspectemplate1"/>-->
+				<insertarAction aspecttemplate="aspectemplate1"/>
+				<modificarAction aspecttemplate="aspectemplate2"/>
+				</OperacionController>				
+			</nomencladores>
+			
+		</activos_fijos>
+	</logistica>
+	
+	<planificacion>
+		<ceBeca>
+			<residencia>
+				<GestaptoController>
+					<insertaraptoAction aspecttemplate="aspectemplate1"/>
+					<modificaaptoAction aspecttemplate="aspectemplate1"/>
+				</GestaptoController>
+				<GestresController>
+					<insertarresAction aspecttemplate="aspectemplate1"/>
+					<modificaresAction aspecttemplate="aspectemplate1"/>
+				</GestresController>
+			</residencia>
+		</ceBeca>
+		<nomencladores>
+			<GestionarplanController>
+					<insertarplanAction aspecttemplate="aspectemplate1"/>
+					<modificarplanAction aspecttemplate="aspectemplate1"/>
+			</GestionarplanController>
+			<ClasifmodelController>
+					<adicionarmodeloAction aspecttemplate="aspectemplate1"/>
+					<modificarmodeloAction aspecttemplate="aspectemplate1"/>
+			</ClasifmodelController>
+
+			<GestionarmodeloController>
+					<insertarmodeloAction aspecttemplate="aspectemplate1"/>
+					<modificarmodeloAction aspecttemplate="aspectemplate1"/>
+			</GestionarmodeloController>
+				<GestionarestadoController>
+					<insertarestadoAction aspecttemplate="aspectemplate1"/>
+					<modificarestadoAction aspecttemplate="aspectemplate1"/>
+			</GestionarestadoController>
+			<GestionaretapaController>
+					<insertaretapaAction aspecttemplate="aspectemplate1"/>
+					<modificaretapaAction aspecttemplate="aspectemplate1"/>
+			</GestionaretapaController>
+			<GestionargrupoindicadorController>
+					<insertargrupoindicadorAction aspecttemplate="aspectemplate1"/>
+					<modificargrupoindicadorAction aspecttemplate="aspectemplate1"/>
+			</GestionargrupoindicadorController>
+			<GestionarindicadorController>
+					<insertarindicadorAction aspecttemplate="aspectemplate1"/>
+					<modificarindicadorAction aspecttemplate="aspectemplate1"/>
+			</GestionarindicadorController>
+			<GestionartipoceldaController>
+					<insertartipoceldaAction aspecttemplate="aspectemplate1"/>
+					<modificartipoceldaAction aspecttemplate="aspectemplate1"/>
+			</GestionartipoceldaController>
+			<GestionarniveldeaprobacionController>
+					<adicionarnivelAction aspecttemplate="aspectemplate1"/>
+					<modificarnivelAction aspecttemplate="aspectemplate1"/>
+			</GestionarniveldeaprobacionController>
+			
+
+			<GestionarniveldeaprobacionController>
+					<adicionarnivelAction aspecttemplate="aspectemplate1"/>
+					<modificarnivelAction aspecttemplate="aspectemplate1"/>
+			</GestionarniveldeaprobacionController>
+		    <GestionaratributoController>
+			     <adicionaratributoAction aspecttemplate="aspectemplate1"/>
+			     <modificaratributoAction aspecttemplate="aspectemplate1"/>
+			</GestionaratributoController>
+
+		</nomencladores>		
+		<gestiondeformatos>
+		        <GestplantillaController>
+					<insertarplantillaAction aspecttemplate="aspectemplate1"/>
+					<modificarplantillaAction aspecttemplate="aspectemplate1"/>
+				</GestplantillaController>
+         	</gestiondeformatos>
+
+		<pdo>
+			<administracion>
+				<GestionarnomencladoresController>																
+					<eliminarnomTipoatAction aspecttemplate="aspectemplate1"/>
+					<eliminarnomEstadoAction aspecttemplate="aspectemplate1"/>
+					<eliminarnomOrigenAction aspecttemplate="aspectemplate1"/>
+					<eliminarnomUmedidaAction aspecttemplate="aspectemplate1"/>
+					<eliminarnomImportanciaAction aspecttemplate="aspectemplate1"/>
+					<eliminarnomTipoinvolucradoAction aspecttemplate="aspectemplate1"/>					
+				</GestionarnomencladoresController>
+			</administracion>
+        </pdo>
+		
+		<configurar_plan>
+			<ConfigurarplanController>
+				<eliminarconfAction aspecttemplate="aspectemplate1"/>
+			</ConfigurarplanController>
+		</configurar_plan>
+
+		<indicadores>
+			<GestindicadoresController>
+				<insertarIndicadoresAction aspecttemplate="aspectemplate1"/>
+				<modificarIndicadorAction aspecttemplate="aspectemplate1"/>
+				<insertarIndicadorExtAction aspecttemplate="aspectemplate1"/>
+			</GestindicadoresController>
+		</indicadores>
+			
+		<plantilla>
+			<GescolumnaController>
+				<insertarcolumnasAction aspecttemplate="aspectemplate1"/>
+				<modificarcolumnasAction aspecttemplate="aspectemplate1"/>
+				<activarcolumnaAction aspecttemplate="aspectemplate1"/>
+				<desactivararcolumnaAction aspecttemplate="aspectemplate1"/>
+			</GescolumnaController>
+		
+			<!--<GesplantillaController>
+				<insertarPlantillaAction aspecttemplate="aspectemplate1"/>
+				<adicionarplantillaAction aspecttemplate="aspectemplate1"/>
+				<modificarplantillaAction aspecttemplate="aspectemplate1"/>
+				<adicionarceldasAction aspecttemplate="aspectemplate1"/>
+				<activarplantillaAction aspecttemplate="aspectemplate1"/>
+				<desactivarplantillaAction aspecttemplate="aspectemplate1"/>
+				 <adicionarformulaAction aspecttemplate="aspectemplate1"/> 
+			</GesplantillaController>-->
+		</plantilla>
+
+
+		<calculo_de_necesidades>
+		   <GestionarcriterioController>
+				<insertarCriterioAction aspecttemplate="aspectemplate1"/>
+				<modificarCriterioAction aspecttemplate="aspectemplate1"/>
+			</GestionarcriterioController>
+			
+			 <GestionarconceptoController>
+				<insertarConceptoAction aspecttemplate="aspectemplate1"/>
+				<modificarConceptoAction aspecttemplate="aspectemplate1"/>
+			</GestionarconceptoController>
+			
+			 <GestionaractividadController>
+				<insertarActividadAction aspecttemplate="aspectemplate1"/>
+				<modificarActividadAction aspecttemplate="aspectemplate1"/>
+			</GestionaractividadController>	
+			
+			<GestnormasController>
+				<insertarprodAction aspecttemplate="aspectemplate1"/>
+				<modificarprodAction aspecttemplate="aspectemplate1"/>
+				<insertarnormaAction aspecttemplate="aspectemplate1"/>
+				<modificarnormaAction aspecttemplate="aspectemplate1"/>
+			</GestnormasController>
+			
+			<AsociarcriactController>
+				<insertarasociacionAction aspecttemplate="aspectemplate1"/>
+			</AsociarcriactController>
+			
+			<AsociarcriconcController>
+				<insertarasociacionAction aspecttemplate="aspectemplate1"/>
+			</AsociarcriconcController>
+			
+			<GesnivelactividadController>
+				<insertarnivelactividadAction aspecttemplate="aspectemplate1"/>
+				<modificarnivelactividadAction aspecttemplate="aspectemplate1"/>
+			</GesnivelactividadController>
+			
+			<CalnecesidadesController>
+				<InsertarCapturaAction aspecttemplate="aspectemplate1"/>
+				<ModificarCapturaAction aspecttemplate="aspectemplate1"/>
+			</CalnecesidadesController>
+		</calculo_de_necesidades>
+		
+		<realizacion_de_plan>
+		   <GestmodeloController>
+				<cambiarEstadoModeloAction aspecttemplate="aspectemplate1"/>
+				<modificarComentarioAction aspecttemplate="aspectemplate1"/>
+				<oficializarPlanAction aspecttemplate="aspectemplate1"/>
+		   </GestmodeloController>
+
+		</realizacion_de_plan>
+   <construccion_planes>
+   <ConstplanesController>
+   <adicionarPlanAction aspecttemplate="aspectemplate1"/>
+   <modificarPlanAction aspecttemplate="aspectemplate1"/>
+   </ConstplanesController>
+   </construccion_planes>
+	</planificacion>
+	
+	<costos_procesos>
+	    <nom_conf>
+			<OpnomencladorController>
+				<insertarAction aspecttemplate="aspectemplate2"/>
+				<modificarAction aspecttemplate="aspectemplate2"/>
+			</OpnomencladorController>
+	    </nom_conf>
+	</costos_procesos>
+	
+	<configuracion>
+	
+		<nomencladores>
+			<ConceptosController>
+				<adicionartablaAction aspecttemplate="aspectemplate1"/>
+				
+			</ConceptosController>
+		</nomencladores>	
+	</configuracion>
+	<metadatos>
+	<NomencladorController>
+	   <!--1 Nomenclador de organo --> 
+			<mostrartiposeavAction 	aspecttemplate="aspectemplate2"/>	
+			<modificarorganosAction aspecttemplate="aspectemplate2"/>
+			<eliminarorganosAction 	aspecttemplate="aspectemplate2"/>
+			<insertarorganosAction 	aspecttemplate="aspectemplate2"/>
+			
+			<!--2 Nomenclador de Subcategoria --> 
+			<mostrarsbcategoriaAction 	aspecttemplate="aspectemplate2"/>	
+			<insertarsbcategoriaAction 	aspecttemplate="aspectemplate2"/>
+			<modificarsbcategoriaAction aspecttemplate="aspectemplate2"/>
+			<eliminarsbcategoriaAction 	aspecttemplate="aspectemplate2"/>
+			
+		
+			
+			
+			 
+          
+        
+                            
+           <!--3 Nomenclador Prefijo-->		
+           <mostrarprefijoAction aspecttemplate="aspectemplate2"/>
+           <insertarprefijoAction aspecttemplate="aspectemplate2"/> 
+           <modificarprefijoAction aspecttemplate="aspectemplate2"/> 
+           <eliminarprefijoAction aspecttemplate="aspectemplate2"/> 
+           <!-- 4 Nomenclador Grupo Complejidad-->
+           <mostrargrupocomplejidadAction aspecttemplate="aspectemplate2"/>
+           <insertargrupocomplejidadAction aspecttemplate="aspectemplate2"/> 
+           <modificargrupocomplejidadAction aspecttemplate="aspectemplate2"/> 
+           <eliminargrupocomplejidadAction aspecttemplate="aspectemplate2"/>
+           <!-- 5 Nomenclador Escala Salarial-->
+           <mostrarescalasalarialAction aspecttemplate="aspectemplate2"/>
+           <insertarescalasalarialAction aspecttemplate="aspectemplate2"/> 
+           <modificarescalasalarialAction aspecttemplate="aspectemplate2"/> 
+           <eliminarescalasalarialAction aspecttemplate="aspectemplate2"/>
+          <!-- 6 Nomenclador categoria ocupacional-->
+           <mostrarcatgriaocpnalAction aspecttemplate="aspectemplate2"/>
+           <insertarcatgriaocpnalAction aspecttemplate="aspectemplate2"/> 
+           <modificarcatgriaocpnalAction aspecttemplate="aspectemplate2"/> 
+           <eliminarcatgriaocpnalAction aspecttemplate="aspectemplate2"/>
+           <!-- 7 Nomenclador categoria Civil-->
+           <mostrarcatgriacvilAction aspecttemplate="aspectemplate2"/>
+           <insertarcatgriacvilAction aspecttemplate="aspectemplate2"/> 
+           <modificarcatgriacvilAction aspecttemplate="aspectemplate2"/> 
+           <eliminarcatgriacvilAction aspecttemplate="aspectemplate2"/>
+           <!-- 8 Nomenclador Calificador-->
+           <mostrarcalificadorAction aspecttemplate="aspectemplate2"/>
+           <insertarcalificadorAction aspecttemplate="aspectemplate2"/> 
+           <modificarcalificadorAction aspecttemplate="aspectemplate2"/> 
+           <eliminarcalificadorAction aspecttemplate="aspectemplate2"/>
+           <!-- 9 Nomenclador Salario-->
+           <mostrarsalarioAction aspecttemplate="aspectemplate2"/>
+           <insertarsalarioAction aspecttemplate="aspectemplate2"/> 
+           <modificarsalarioAction aspecttemplate="aspectemplate2"/> 
+           <eliminarsalarioAction aspecttemplate="aspectemplate2"/>
+           <!-- 10 Nomenclador Tecnica-->
+           <mostrarntecnicaAction aspecttemplate="aspectemplate2"/>
+           <insertarntecnicaAction aspecttemplate="aspectemplate2"/> 
+           <modificarntecnicaAction aspecttemplate="aspectemplate2"/> 
+           <eliminarntecnicaAction aspecttemplate="aspectemplate2"/>
+           <!--11 Nomenclador Modulo-->
+           <mostrarnmoduloAction aspecttemplate="aspectemplate2"/>
+           <insertarnmoduloAction aspecttemplate="aspectemplate2"/> 
+           <modificarnmoduloAction aspecttemplate="aspectemplate2"/> 
+           <eliminarnmoduloAction aspecttemplate="aspectemplate2"/>
+	      <!-- Nomenclador Clasificacion-->
+           <mostrarclasificacionAction aspecttemplate="aspectemplate2"/>
+           <insertarclasificacionAction aspecttemplate="aspectemplate2"/> 
+           <modificarclasificacionAction aspecttemplate="aspectemplate2"/> 
+           <eliminarclasificacionAction aspecttemplate="aspectemplate2"/>
+	
+      <!-- 12 Nomenclador Tipo Calificador -->
+       <mostrartipocalificadorAction aspecttemplate="aspectemplate2"/>  
+	   <insertartipocalificadorAction aspecttemplate="aspectemplate2"/>
+	   <modificartipocalificadorAction aspecttemplate="aspectemplate2"/>
+	   <eliminartipocalificadorAction aspecttemplate="aspectemplate2"/>
+	   <!--13 Nomenclador Grado Militar -->
+	   <mostrargradomilitarAction aspecttemplate="aspectemplate2"/>
+	   <insertargradomilitarAction aspecttemplate="aspectemplate2"/>
+	   <modificargradomilitarAction aspecttemplate="aspectemplate2"/>
+	   <eliminargradomilitarAction aspecttemplate="aspectemplate2"/>
+	   <!--14 Nomenclador Agrupacion-->
+	   <mostrarnagrupacionAction aspecttemplate="aspectemplate2"/>
+	   <insertarnagrupacionAction aspecttemplate="aspectemplate2"/>
+	   <modificarnagrupacionAction aspecttemplate="aspectemplate2"/>
+	   <eliminarnagrupacionAction aspecttemplate="aspectemplate2"/>
+	   <!--15 Nomenclador Preparacion militar-->
+	   <mostrarpmilitarAction aspecttemplate="aspectemplate2"/>
+	   <insertarpmilitarAction aspecttemplate="aspectemplate2"/>
+	   <modificarpmilitarAction aspecttemplate="aspectemplate2"/>
+	   <eliminarpmilitarAction aspecttemplate="aspectemplate2"/>
+	   <!-- 16 Nomenclador Nivel utilizacion-->
+	   <insertarnivelutilizacionAction aspecttemplate="aspectemplate2"/>
+	   <mostrarnivelutilizacionAction aspecttemplate="aspectemplate2"/>
+	   <modificarnivelutilizacionAction aspecttemplate="aspectemplate2"/>
+	   <eliminarnivelutilizacionAction aspecttemplate="aspectemplate2"/>
+	     <!-- 17 Nomenclador Cargo Civil-->
+	    <insertarcargocivilAction aspecttemplate="aspectemplate2"/>
+	    <modificarcargocivilAction aspecttemplate="aspectemplate2"/>
+	    <mostrarcargocivilAction aspecttemplate="aspectemplate2"/>
+	    <eliminarcargocivilAction aspecttemplate="aspectemplate2"/>
+	    <!-- 18 Nomenclador Cargo Militar-->
+	    <insertarcargomtarAction aspecttemplate="aspectemplate2"/>
+	    <modificarcargomtarAction aspecttemplate="aspectemplate2"/>
+	    <mostrarcargomtarAction aspecttemplate="aspectemplate2"/>
+	    <eliminarcargomtarAction aspecttemplate="aspectemplate2"/>
+	    <!--Nivel Estructura-->
+	     <mostrarnvelestrAction aspecttemplate="aspectemplate2"/>
+	    <insertarnvelestrAction aspecttemplate="aspectemplate2"/>
+	    <modificarnvelestrAction aspecttemplate="aspectemplate2"/>
+	    <eliminarnvelestrAction aspecttemplate="aspectemplate2"/>
+</NomencladorController>
+<EstructuraController>
+		<tablasAction aspecttemplate="aspectemplate2"/>
+		<tablascamposAction aspecttemplate="aspectemplate2"/>
+		<tablascamposvaloresAction aspecttemplate="aspectemplate2"/>
+		<insertavaloresAction aspecttemplate="aspectemplate2"/>
+		<eliminarvaloresAction aspecttemplate="aspectemplate2"/>
+		<mostrarcamposAction aspecttemplate="aspectemplate2"/>
+		<mostrartablasAction aspecttemplate="aspectemplate2"/>
+		<construirformularioinsercionAction aspecttemplate="aspectemplate2"/>
+		<construirformulariomodificarAction aspecttemplate="aspectemplate2"/>
+		
+		<construircamposgridAction aspecttemplate="aspectemplate2"/>
+	
+		
+		<construircamposgridopAction aspecttemplate="aspectemplate2"/>
+		<buscarhijosagrupAction aspecttemplate="aspectemplate2"/>
+		<modificarvaloresAction aspecttemplate="aspectemplate2"/>
+		<buscarcomposicionAction aspecttemplate="aspectemplate2"/>
+		
+		<insertarcargocivilAction aspecttemplate="aspectemplate2"/>
+		<modificarcargocivilAction aspecttemplate="aspectemplate2"/>
+		<buscarsalarioporgrupoescalaAction aspecttemplate="aspectemplate2"/>
+		<mostrarcargosAction aspecttemplate="aspectemplate2"/>
+		<mostrardatoscargoAction aspecttemplate="aspectemplate2"/>
+		<insertarcargomilitarAction aspecttemplate="aspectemplate2"/>
+		<modificarcargomilitarAction aspecttemplate="aspectemplate2"/>
+		<eliminarcargoAction aspecttemplate="aspectemplate2"/>
+		<eliminarestructuraagrupacionAction aspecttemplate="aspectemplate2"/>
+		<insertarestructuraagrupacionAction aspecttemplate="aspectemplate2"/>
+		<insertartecnicaAction aspecttemplate="aspectemplate2"/>
+		<eliminartecnicaAction aspecttemplate="aspectemplate2"/>
+		<modificartecnicaAction aspecttemplate="aspectemplate2"/>
+		<mostrarestructuraagrupacionAction aspecttemplate="aspectemplate2"/>
+		<mostrartecnicaAction aspecttemplate="aspectemplate2"/>
+		<!--<construirvaloresgridAction aspecttemplate="aspectemplate2"/>-->
+</EstructuraController>
+<EavController>
+		<insertarTablasAction aspecttemplate="aspectemplate2"/>
+		<modificarTablasAction aspecttemplate="aspectemplate2"/>
+		<eliminartablaAction aspecttemplate="aspectemplate2"/>
+		<insertarcamposAction aspecttemplate="aspectemplate2"/>
+		<eliminarcamposAction aspecttemplate="aspectemplate2"/>
+		<mostrarcamposAction aspecttemplate="aspectemplate2"/>
+		<modificarcamposAction aspecttemplate="aspectemplate2"/>
+		<insertarvalorcomboAction aspecttemplate="aspectemplate2"/>
+		<mostrarvalorcomboAction aspecttemplate="aspectemplate2"/>
+		<buscarconexionesAction aspecttemplate="aspectemplate2"/>
+		<insertarconexionesAction aspecttemplate="aspectemplate2"/>
+		<eliminarconexionesAction aspecttemplate="aspectemplate2"/>
+</EavController> 		
+</metadatos>
+	
+	<finanzas>
+	<cobros_pagos>
+		<derechouobligacion>
+			<GestionarderechocobroController>  				
+			</GestionarderechocobroController>
+			<GestionarderechofiscalController>
+				<canceladerechocobrofiscalAction aspecttemplate="aspectemplate1"/>
+			</GestionarderechofiscalController>
+			<GestionarobligacionesfiscalesController>
+				<cancelaobligacionpagofiscalAction aspecttemplate="aspectemplate2"/>
+				<gestionarobligacionesfiscalesAction aspecttemplate="aspectemplate2"/>
+			</GestionarobligacionesfiscalesController>
+			<GestionarobligacionpagoController>
+				<cancelaobligacionpagoclienteAction aspecttemplate="aspectemplate1"/>
+			</GestionarobligacionpagoController>
+		</derechouobligacion>
+		<funcionalidades>		
+			<liquidacion>
+					<GestregistrainstrumentoController>
+						<gestregistrainstrumentoAction aspecttemplate="aspectemplate2"/>
+					</GestregistrainstrumentoController>
+					<GestregistrainstrumentocobroController>
+						<gestregistrainstrumentocobroAction aspecttemplate="aspectemplate2"/>
+					</GestregistrainstrumentocobroController>
+					<GestregistrarinstrumentocobroopercionfiscalController>
+						<gestregistrarinstrumentocobroopercionfiscalAction aspecttemplate="aspectemplate2"/>
+					</GestregistrarinstrumentocobroopercionfiscalController>
+					<GestregistrarinstrumentooperacionesfiscalesController>
+						<gestregistrarinstrumentooperacionesfiscalesAction aspecttemplate="aspectemplate2"/>
+					</GestregistrarinstrumentooperacionesfiscalesController>
+					<!--<GestgestionaroperacionesanticipadascobroController>
+						<modificarIntAction aspecttemplate="aspectemplate2"/>
+						<gestgestionaroperacionesanticipadascobroAction aspecttemplate="aspectemplate2"/>
+						<cargarpagoanticipadoAction aspecttemplate="aspectemplate2"/>						
+					</GestgestionaroperacionesanticipadascobroController>
+					<GestgestionaroperacionesanticipadasController>
+						<modificarIntAction aspecttemplate="aspectemplate2"/>
+						<cargarpagoanticipadoAction aspecttemplate="aspectemplate2"/>
+						<gestgestionaroperacionesanticipadasAction aspecttemplate="aspectemplate2"/>
+					</GestgestionaroperacionesanticipadasController>-->
+				</liquidacion>		
+			<cambio_moneda>			
+				<GestionarcontratoController>
+					<cancelacontratoAction aspecttemplate="aspectemplate1"/>
+					<gestionarcontratoAction aspecttemplate="aspectemplate2"/>
+				</GestionarcontratoController>
+			</cambio_moneda>
+		</funcionalidades>
+		<configuracion>
+			<ParrafoController>				
+				<parrafoAction aspecttemplate="aspectemplate2"/>
+				<cargarparrafofiscalAction aspecttemplate="aspectemplate2"/>
+				<modificarparrafofiscalAction aspecttemplate="aspectemplate2"/>
+				<eliminarparrafofiscalAction aspecttemplate="aspectemplate2"/>
+			</ParrafoController>
+			<GestmotivocancelacionController>				
+				<eliminarmotivocancelacionAction aspecttemplate="aspectemplate2"/>
+			</GestmotivocancelacionController>
+		</configuracion>
+		<conciliacion>
+			<!--<AdicionarconciliaciondeobligacionesoderechosController>				
+				<adicionarconciliaciondeobligacionesoderechosAction aspecttemplate="aspectemplate2"/>
+				<cargargridAction aspecttemplate="aspectemplate2"/>
+			</AdicionarconciliaciondeobligacionesoderechosController>		
+			
+			<AdicionarconcilaciondeanticiposController>				
+				<adicionarconcilaciondeanticiposAction aspecttemplate="aspectemplate2"/>
+				<cargargridanticipoAction aspecttemplate="aspectemplate2"/>
+			</AdicionarconcilaciondeanticiposController>-->
+		</conciliacion>
+	</cobros_pagos>
+	<banco>
+		<GestionartipomovimientoController>
+			<adicionartipomovimientoAction aspecttemplate="aspectemplate2"/>
+			<modificartipomovimientoAction aspecttemplate="aspectemplate2"/>
+			<eliminartipomovimientoAction aspecttemplate="aspectemplate2"/>
+		</GestionartipomovimientoController>
+		<GestionartipocuentaController>
+			<insertartipocuentaAction aspecttemplate="aspectemplate2"/>
+			<modificartipocuentaAction aspecttemplate="aspectemplate2"/>
+			<eliminartipocuentaAction aspecttemplate="aspectemplate2"/>
+		</GestionartipocuentaController>
+		<GestionarcuentabancariaController>
+			<adicionarCuentaBancariaAction aspecttemplate="aspectemplate2"/>
+			<modificarCuentaBancariaAction aspecttemplate="aspectemplate2"/>
+			<eliminarCuentaBancariaAction aspecttemplate="aspectemplate2"/>
+		</GestionarcuentabancariaController>
+</banco>
+</finanzas>
+
+</weaver>

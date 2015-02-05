@@ -1,0 +1,13 @@
+{lbBtnAdicionar:'Adicionar',
+lbBtnModificar:'Modificar',
+lbBtnAyuda:'Ayuda',
+lbTitGestionarperfilesdeusuarios:'Gestionar perfiles de usuarios',
+lbTitAdicionardatosalperfil:'Adicionar datos al perfil',
+lbBtnCancelar:'Cancelar',
+lbBtnAplicar:'Aplicar',
+lbBtnAceptar:'Aceptar',
+lbBtnBuscar:'Buscar',
+lbTitDenBuscar:'Nombre de usuario',
+lbMsgErrorEnCamops:'Por favor verifique, existen campos con valores incorrectos.',
+lbTitModificardatosdelperfil:'Modificar datos del perfil'}
+

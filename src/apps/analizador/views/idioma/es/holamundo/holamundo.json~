@@ -1,0 +1,18 @@
+{lbServidor:'Servidor',
+lbBasedatos:'Base de datos',
+lbBtnCancelar:'Cancelar',
+lbBtnAceptar:'Aceptar',
+lbTitFieldSet:'Tipo de Instalaci&oacute;n:',
+lbTitVentanaTit:'Instalaci&oacute;n del sistema de gesti&oacute;n integral de seguridad',
+lbBLCompleta:'Completa',
+lbBLPersonalizada:'Personalizada',
+lbBLEstructura:'Estructura',
+lbBLDatos:'Datos',
+lbBLRoles:'Roles',
+lbBLPermisos:'Permisos',
+lbMsgFunSelecc:'Debe de seleccionar al menos un tipo de instalaci&oacute;n',
+lbMsgBlank:'Este campo es requerido.',
+lbMsgRegex:'Estos datos son incorrectos el rango ip es 255.255.255.255',
+lbMsgRegexI:'El nombre de la base de datos debe comenzar con minuscula.',
+lbMsgFunAdicionarMsg:'Registrando datos...'}
+

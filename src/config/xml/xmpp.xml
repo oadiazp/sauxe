@@ -1,0 +1,4 @@
+<root>
+	<js server = 'zclaptop'/>
+	<php server = '127.0.0.1' username = "b" password = "b"/>
+</root>

@@ -1,0 +1,17 @@
+<root>
+	<CantTrazasPorSubsistema name = "Cantidad de trazas por subsistema" code = "001">
+		<PieView name = "Vista de pastel" enabled = 'true'/>
+		<TableView name = "Vista de tabla" enabled = 'true'/>
+		<ColumnView name = "Vista de columna" enabled = 'true'>
+			<config xField = 'denominacion' yField = 'cantidad'/>
+		</ColumnView>
+		<LineView name = "Vista de línea" enabled = 'true'/>
+	</CantTrazasPorSubsistema>
+
+	<CantTrazasDatosPorSubsistema name = "Cantidad de trazas de datos por subsistema" code = "002">
+		<PieView name = "Vista de pastel" enabled = 'true'/>
+		<TableView name = "Vista de tabla" enabled = 'true'/>
+		<ColumnView name = "Vista de columna" enabled = 'true'/>
+		<LineView name = "Vista de línea" enabled = 'true'/>
+	</CantTrazasDatosPorSubsistema>
+</root>

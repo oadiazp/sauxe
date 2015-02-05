@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+	<conn gestor="pgsql" host="localhost" bd="sauxe"/>
+	<esquemas>
+		<datos nombre="mod_estructuracomp" usuario="estructurasigis" password="52557939140454129471 35625110288151458898 13683405812916788827"/>
+		<datos nombre="mod_nomencladores" usuario="nomencladorsigis" password="83393249592206603023 74922137544595822708 80048734451682985496 266001988046875"/>
+		<datos nombre="mod_seguridad" usuario="seguridadsigis" password="70380016223652623386 11091131882799218883 30189856496314810437"/>
+		<datos nombre="mod_traza" usuario="trazasigis" password="89623430641233240321 13683405812916788827"/>
+		</esquemas>
+</config>
